@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Vocab Vault
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Unit 4 - Full CRUD Application
 
-## Available Scripts
+### About Vocab Vault
+As someone with dyslexia I have always struggled with low self-esteem, filled with worry about being "found out" since my childhood. In school, I always figured out coping mechanisms as a workaround to the struggle I had with language and continue to utilize them to this day. I have always very consciously and intentionally looked up unfamiliar words and kept a running log of them. This has helped me to acquire new words and expand my working vocabulary as well as better comprehend text.
 
-In the project directory, you can run:
+With dyslexia affecting 780 million individuals globally, many of whom do not receive a diagnosis or receive learning supports, it is imperative that tools that allow access to language be made available. It is my  hope that this app allows fellow dyslexics the opportunity to feel more comfortable with language and able to engage with any text they come across in their day to day lives.
 
-### `npm start`
+#### Technologies Used
+- HTML
+- CSS
+- PostSQL
+- JavaScript
+- React Router Dom
+- React JS
+- Postman
+- Render
+- Trello
+- Mural
+- Mockflow
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Routes & Components
+- App --> Header 
+- App --> Outlet 
+- Outlet -- "/" --> Index
+- Outlet -- "/word/:id" --> Show
+- Outlet -- "/word/create" --> createAction
+- Outlet -- "/word/update/:id" --> updateAction
+- Outlet -- "/word/delete/:id" --> deleteAction
+- Route path="add" element={Create} 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Website Images
+![IndexPage](img/IndexPage.png)
+![ShowPage](img/ShowPage.png)
+![CreatePage](img/CreatePage.png)
 
-### `npm test`
+### Backend Wireframe
+![Wireframe](img/Mockflow.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Link to Planning Trello Board
+[Trello Board](https://trello.com/b/mgSvAPPm/language-log-project-4)
 
-### `npm run build`
+### Link to Backend 
+[Render Link](https://vocab-vault.onrender.com)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Link to Frontend
+[Live Site]()
