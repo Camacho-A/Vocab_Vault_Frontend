@@ -1,19 +1,23 @@
-import { useLoaderData, Link } from "react-router-dom"
+import { useLoaderData } from "react-router-dom"
 import Post from "../components/Post"
+import "../css/app.css"
+
 
 const Index = (props) => {
 	const words = useLoaderData()
+	
 
 	return (
 		<>
-				<Link to="create">
-					<button className="header__add--btn">Add Words</button>
-				</Link>
-			
+			<h1 className="about">
+				Click on each card to learn new words.
+			</h1>
 
-			{words.map((post) => (
-				<Post key={post.id} post={post} />
-			))}
+			<div className="main">
+				{words.map((post) => (
+					<Post key={post.id} post={post} />
+				))}
+			</div>
 		</>
 	)
 }

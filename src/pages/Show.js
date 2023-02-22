@@ -13,13 +13,13 @@ const Show = (props) => {
 
 	return (
 		<div style={div}>
-			<h1>{post.word}</h1>
-			<h2>{post.pronunciation}</h2>
-			<h3>{post.partOfSpeech}</h3>
-			<h4>{post.definition}</h4>
-			<h5>{post.context}</h5>
+			<h1>Word: {post.word}</h1>
+			<h2>Pronunciation: {post.pronunciation}</h2>
+			<h3>Part of Speech: {post.partOfSpeech}</h3>
+			<h4>Definition: {post.definition}</h4>
+			<h5>Content: {post.context}</h5>
 			<div>
-				<h2>Update this Todo</h2>
+				<h2>Update this Word</h2>
 				<Form action={`/update/${post.id}`} method="post">
 					<input
 						className="show__input"
@@ -58,17 +58,17 @@ const Show = (props) => {
 						placeholder="Context"
 						defaultValue={post.context}
 					/>
-					<button>Update Todo</button>
+					<button>Update</button>
 				</Form>
 			</div>
 			<div>
 				<Link to="/">
 					<button>Go Back</button>
 				</Link>
-	
 			</div>
+	
 			<Form action={`/delete/${post.id}`} method="post">
-				<button>Delete Todo</button>
+				<button>Delete</button>
 			</Form>
 		</div>
 	)

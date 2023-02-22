@@ -1,0 +1,15 @@
+.footer {
+    margin-top: auto;
+    background-image: linear-gradient(to left, #000000 0%, #ffffff 100%);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description{
+    width: 49%;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+
+}

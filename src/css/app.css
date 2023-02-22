@@ -1,0 +1,37 @@
+
+@import 'header.css';
+@import 'index.css';
+@import 'show.css';
+@import 'footer.css';
+@import 'create.css';
+
+
+
+
+*,*::before, *::after{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+    
+
+}
+
+a {
+    display:inline-block ;
+    text-decoration: none;
+    color: white
+}
+
+
+  .App {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+  }

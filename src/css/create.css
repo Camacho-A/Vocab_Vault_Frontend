@@ -1,0 +1,43 @@
+
+.form {
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgb(253, 255, 252);
+    outline: none;
+    border: none; 
+    
+}
+
+.input {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+   
+}
+
+.create_title{
+    margin-top: 50px;
+    margin-left: 5px;
+    color: white;
+}
+
+
+
+.btn-main_input {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+   
+    font-size: 17px;
+    margin: 20px;
+   
+    
+}
+
+.btn-main_input:hover {
+  background-color: #00c5fb;
+  cursor: pointer;
+}
+

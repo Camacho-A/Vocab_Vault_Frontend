@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  outline: 5px solid white;
+  background-image: linear-gradient(to right, #000000 0%, #ffffff 100%);
+height: 80px;
+text-align: left;
+text-decoration: none;
+padding: 10px;
+}
+
+.header__name.two {
+  padding-left: 30px;
+}
+
+.title h3 {
+    font-size: 40px;
+  margin: 1rem auto;
+  animation: text 3s ease infinite;
+  color: #00c5fb;
+
+}
+
+/* .title:hover{
+    cursor:default
+} */
+
+
+
+.header__add--btn {
+  margin-top: 16px;
+  margin-right: 20px;
+  font-size: 18px;
+  background-color: #00c5fb;
+  
+} 
+
+.header__add--btn:hover{
+  background-color: black;
+}
