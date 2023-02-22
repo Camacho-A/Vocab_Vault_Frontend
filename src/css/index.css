@@ -4,7 +4,7 @@
 	padding-inline-end: 30px;
 	display: grid;
 	
-	grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(495px, 1fr));
 	text-align: center;
 	justify-content: center;
 	margin-bottom: 50px;
