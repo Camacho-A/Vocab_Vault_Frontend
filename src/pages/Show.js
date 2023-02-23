@@ -3,22 +3,31 @@ import { Link, useLoaderData, Form } from "react-router-dom"
 const Show = (props) => {
 	const post = useLoaderData()
 
-	//styles
-	const div = {
-		textAlign: "center",
-		border: "3px solid green",
-		width: "80%",
-		margin: "30px auto",
-	}
+
 
 	return (
-		<div style={div}>
-			<h1>Word: {post.word}</h1>
-			<h2>Pronunciation: {post.pronunciation}</h2>
-			<h3>Part of Speech: {post.partOfSpeech}</h3>
-			<h4>Definition: {post.definition}</h4>
-			<h5>Content: {post.context}</h5>
-			<div>
+		<div className="show_container">
+			<div className="show_list">
+				<h1>
+					<u>Word</u>: {post.word}
+				</h1>
+				<h2>
+					<u>Pronunciation</u>: {post.pronunciation}
+				</h2>
+				<h3>
+					<u>Part of Speech</u>: {post.partOfSpeech}
+				</h3>
+				<h4>
+					<u>Definition</u>: {post.definition}
+				</h4>
+				<h5>
+					<u>Content</u>: {post.context}
+				</h5>
+				<Form action={`/delete/${post.id}`} method="post">
+					<button className="delete">Delete</button>
+				</Form>
+			</div>
+			<div className="show">
 				<h2>Update this Word</h2>
 				<Form action={`/update/${post.id}`} method="post">
 					<input
@@ -29,6 +38,7 @@ const Show = (props) => {
 						defaultValue={post.word}
 						required
 					/>
+					<br></br>
 					<input
 						className="show__input"
 						type="input"
@@ -36,6 +46,7 @@ const Show = (props) => {
 						placeholder="Pronunciation"
 						defaultValue={post.pronunciation}
 					/>
+					<br></br>
 					<input
 						className="show__input"
 						type="input"
@@ -43,6 +54,7 @@ const Show = (props) => {
 						placeholder="Part Of Speech"
 						defaultValue={post.partOfSpeech}
 					/>
+					<br></br>
 					<input
 						className="show__input"
 						type="input"
@@ -50,6 +62,7 @@ const Show = (props) => {
 						placeholder="Definition"
 						defaultValue={post.definition}
 					/>
+					<br></br>
 					<input
 						required
 						className="show__input"
@@ -58,18 +71,15 @@ const Show = (props) => {
 						placeholder="Context"
 						defaultValue={post.context}
 					/>
-					<button>Update</button>
+					<br></br>
+					<button className="update">Update</button>
 				</Form>
 			</div>
 			<div>
 				<Link to="/">
-					<button>Go Back</button>
+					<button className="back">Go Back</button>
 				</Link>
 			</div>
-	
-			<Form action={`/delete/${post.id}`} method="post">
-				<button>Delete</button>
-			</Form>
 		</div>
 	)
 }
