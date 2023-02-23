@@ -1,0 +1,70 @@
+.show_container {
+  margin: 50px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: white;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: black;
+  
+}
+
+.show_list{
+    margin: 45px 50px;
+    float: left;
+    padding: 10px;
+}
+
+.show{
+    margin: 30px 25px 25px 25px;
+    padding: 10px;
+}
+
+.back {
+   position: absolute;
+   left: 45%;
+   bottom: 20%;
+  font-size: 18px;
+ background-color: #00c5fb;
+}
+
+.update, .delete{
+    margin-top: 16px;
+  margin-right: 20px;
+  font-size: 18px;
+   background-color: #00c5fb;
+ 
+}
+
+.delete:hover{
+    background-color: black;
+
+}
+
+.update:hover{
+    background-color: black;
+
+}
+
+.back:hover{
+    background-color: black;
+
+}
+
+.show input {
+    height: 30px;
+    width : 350px;
+    font-size: 18px;
+  
+}
+
+.show_list u {
+    color:#c63838 ;
+}
+
+.show h2 {
+    color: #c63838 ;
+}
+
